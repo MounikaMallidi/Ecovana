@@ -7,8 +7,9 @@ const fileCancelButton = fileUploadWrapper.querySelector("#file-cancel");
 const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
 
-const API_KEY = "AIzaSyCA1JocTP_ZYo3fkKg3vwwVEBoR1oWnimA";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+const API_KEY = "AIzaSyCA1JocTP_ZYo3fkKg3vwwVEBoR1oWnimA";  // use your regenerated key here
+const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+
 
 const userData = { message:null, file:{ data:null, mime_type:null }};
 const chatHistory = [];
